@@ -1,0 +1,14 @@
+{
+  "name": "totvs_automacao_cypress",
+  "version": "1.0.0",
+  "description": "Desafio técnico TOTVS - Automação de testes com Cypress",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Alan dos Santos Rocha",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^14.3.3"
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title data-testid="page-title">Central de Atendimento ao Cliente TAT</title>
+  </head>
+  <body>
+    <div data-testid="header">
+      <h1 id="title" data-testid="main-title">CAC TAT</h1>
+      <p id="subtitle" data-testid="subtitle-text">Forneça o máximo de informações, por favor.</p>
+      <br />
+    </div>
+    <span class="success" data-testid="success-message">
+      <strong>Mensagem enviada com sucesso.</strong>
+    </span>
+    <span class="error" data-testid="error-message">
+      <strong>Valide os campos obrigatórios!</strong>
+    </span>
+    <div id="white-background" data-testid="form-container">
+      <span id="cat" data-testid="cat-image">🐈</span>
+      <form data-testid="form-cadastro">
+        <fieldset class="group" data-testid="name-fields">
+          <div class="field" data-testid="first-name-field">
+            <label for="firstName" data-testid="first-name-label"><strong>Nome</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="text" name="firstName" id="firstName" required data-testid="first-name-input" />
+          </div>
+          <div class="field" data-testid="last-name-field">
+            <label for="lastName" data-testid="last-name-label"><strong>Sobrenome</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="text" name="lastName" id="lastName" required data-testid="last-name-input" />
+          </div>
+        </fieldset>
+        <fieldset class="group" data-testid="contact-fields">
+          <div class="field" data-testid="email-field">
+            <label for="email" data-testid="email-label"><strong>E-mail</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="email" name="email" id="email" required data-testid="email-input" />
+          </div>
+          <div class="field" data-testid="phone-field">
+            <label for="phone" data-testid="phone-label"><strong data-testid="phone-text">Telefone</strong><span class="phone-label-span required-mark"> (obrigatório)</span></label>
+            <input type="number" name="phone" id="phone" data-testid="phone-input" />
+          </div>
+        </fieldset>
+        <div class="field" data-testid="product-field">
+          <label for="product" data-testid="product-label"><strong>Produto</strong></label>
+          <select id="product" data-testid="product-select">
+            <option selected disabled value="" data-testid="product-option-default">Selecione</option>
+            <option value="blog" data-testid="product-option-blog">Blog</option>
+            <option value="cursos" data-testid="product-option-cursos">Cursos</option>
+            <option value="mentoria" data-testid="product-option-mentoria">Mentoria</option>
+            <option value="youtube" data-testid="product-option-youtube">YouTube</option>
+          </select>
+        </div>
+        <div id="support-type" class="field" data-testid="support-type-field">
+          <label data-testid="support-type-label"><strong>Tipo de atendimento</strong></label>
+          <label data-testid="support-type-ajuda-label">
+            <input type="radio" name="atendimento-tat" value="ajuda" checked data-testid="support-type-ajuda-radio" />Ajuda
+          </label>
+          <label data-testid="support-type-elogio-label">
+            <input type="radio" name="atendimento-tat" value="elogio" data-testid="support-type-elogio-radio" />Elogio
+          </label>
+          <label data-testid="support-type-feedback-label">
+            <input type="radio" name="atendimento-tat" value="feedback" data-testid="support-type-feedback-radio" />Feedback
+          </label>
+        </div>
+        <fieldset class="group" id="check" data-testid="contact-preference-field">
+          <label data-testid="contact-preference-label"><strong>Qual seu meio de contato preferencial?</strong></label>
+          <br />
+          <input type="checkbox" id="email-checkbox" name="email" value="email" data-testid="contact-preference-email-checkbox" />
+          <label for="email" data-testid="contact-preference-email-label">E-mail</label>
+          <input type="checkbox" id="phone-checkbox" name="phone" value="phone" data-testid="contact-preference-phone-checkbox" />
+          <label for="phone" data-testid="contact-preference-phone-label">Telefone</label>
+        </fieldset>
+        <div class="field" data-testid="help-text-area-field">
+          <br />
+          <label data-testid="help-text-area-label"><strong>Como podemos te ajudar?</strong><span class="required-mark"> (obrigatório)</span></label>
+          <textarea row="6" id="open-text-area" name="open-text-area" required data-testid="help-text-area-input"></textarea>
+        </div>
+        <div class="field" data-testid="file-upload-field">
+          <label data-testid="file-upload-label"><strong>Adicione um anexo</strong></label>
+          <input id="file-upload" type="file" data-testid="file-upload-input">
+        </div>
+        <button type="submit" class="button" data-testid="button-submit">Enviar</button>
+        <div id="privacy" data-testid="privacy-link-container">
+          <a href="privacy.html" target="_blank" data-testid="privacy-link">Política de Privacidade</a>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

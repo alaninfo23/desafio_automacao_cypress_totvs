@@ -1,0 +1,36 @@
+{
+  "dadosFormulario": {
+    "primeiroNome": "Alan",
+    "sobrenome": "QA",
+    "email": "alan@teste.com",
+    "mensagem": "Quero saber mais sobre os cursos."
+  },
+  "dadosFormularioCompleto": {
+    "primeiroNome": "Alan",
+    "sobrenome": "QA",
+    "email": "alan@teste.com",
+    "mensagem": "Quero saber mais sobre os cursos.",
+    "produto": "cursos",
+    "tipoAtendimento": "ajuda",
+    "contatoEmail": true,
+    "contatoTelefone": false,
+    "caminhoArquivo": "cypress/fixtures/totvs.jpg"
+  },
+  "emailsInvalidos": [
+    "usuarioemail.com",
+    "usuario@",
+    "@email.com",
+    "usuario@email",
+    "usuario@.com",
+    "usuario@com.",
+    "usuario@com..br"
+  ],
+  "mensagens": {
+    "erroCamposObrigatorios": "Valide os campos obrigatórios!",
+    "sucessoMensagemEnviada": "Mensagem enviada com sucesso",
+    "politicaPrivacidadeConteudo1": "Não salvamos dados submetidos no formulário da aplicação CAC TAT.",
+    "politicaPrivacidadeConteudo2": "Utilzamos as tecnologias HTML, CSS e JavaScript, para simular uma aplicação real.",
+    "politicaPrivacidadeConteudo3": "No entanto, a aplicação é um exemplo, sem qualquer persistência de dados, e usada para fins de ensino.",
+    "politicaPrivacidadeConteudo4": "Talking About Testing"
+  }
+}

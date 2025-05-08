@@ -1,0 +1,33 @@
+const testIds = {
+  pageTitle: '[data-testid="page-title"]',
+  header: '[data-testid="header"]',
+  mainTitle: '[data-testid="main-title"]',
+  subtitleText: '[data-testid="subtitle-text"]',
+  successMessage: '[data-testid="success-message"]',
+  errorMessage: '[data-testid="error-message"]',
+  formContainer: '[data-testid="form-container"]',
+  formCadastro: '[data-testid="form-cadastro"]',
+  firstNameInput: '[data-testid="first-name-input"]',
+  lastNameInput: '[data-testid="last-name-input"]',
+  emailInput: '[data-testid="email-input"]',
+  phoneInput: '[data-testid="phone-input"]',
+  productSelect: '[data-testid="product-select"]',
+  supportTypeAjuda: '[data-testid="support-type-ajuda-radio"]',
+  supportTypeElogio: '[data-testid="support-type-elogio-radio"]',
+  supportTypeFeedback: '[data-testid="support-type-feedback-radio"]',
+  contactPreferenceEmail: '[data-testid="contact-preference-email-checkbox"]',
+  contactPreferencePhone: '[data-testid="contact-preference-phone-checkbox"]',
+  helpTextArea: '[data-testid="help-text-area-input"]',
+  fileUpload: '[data-testid="file-upload-input"]',
+  buttonSubmit: '[data-testid="button-submit"]',
+  privacyLink: '[data-testid="privacy-link"]',
+  //testIds da página de Política de Privacidade
+  privacyPageTitle: '[data-testid="privacy-page-title"]',
+  privacyContent: '[data-testid="privacy-content"]',
+  privacyText1: '[data-testid="privacy-text-1"]',
+  privacyText2: '[data-testid="privacy-text-2"]',
+  privacyText3: '[data-testid="privacy-text-3"]',
+  privacyText4: '[data-testid="privacy-text-4"]',
+};
+
+module.exports = testIds;
