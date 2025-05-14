@@ -68,6 +68,23 @@ Os seguintes cenários de teste foram automatizados:
 
 ![image](https://github.com/user-attachments/assets/6b165874-87fe-4a03-a8ab-49179d50c777)
 
+## 🚨 Integração Contínua com GitHub Actions
+
+Este projeto conta com integração contínua configurada através do GitHub Actions, permitindo que os testes sejam executados automaticamente sempre que há um push ou pull request para a branch `main`. Isso garante que os testes estejam sempre atualizados e funcionando corretamente em um ambiente de integração.
+
+* **Workflow do GitHub Actions**: O arquivo `.github/workflows/cypress.yaml` foi configurado para rodar os testes de forma automática.
+
+* **Relatórios com Mochawesome**: Os relatórios de execução dos testes são gerados com o [Mochawesome](https://github.com/adamgruber/mochawesome), um plugin de relatório para o Cypress. O relatório contém informações detalhadas sobre a execução dos testes, incluindo captura de tela e vídeos dos testes que falharam.
+
+### Visualização dos Relatórios
+
+Os relatórios de execução dos testes podem ser baixados diretamente ao acessar a aba **Actions** no repositório do GitHub e clicar no workflow mais recente. Lá você encontrará os artefatos gerados, incluindo os relatórios em formato HTML, prontos para visualização.
+
+- **Acesse os relatórios mais recentes através da aba "Actions" no repositório**.
+
+## 🧑‍💻 Execução dos Testes Automáticos via GitHub Actions
+
+A cada push ou pull request para a branch `main`, o GitHub Actions irá executar os testes automaticamente no ambiente de integração. Você pode verificar o status dos testes acessando a aba **Actions** no repositório do GitHub.
 ## 🗂️ Estrutura do Projeto
 
 A estrutura de arquivos e diretórios para este projeto de testes Cypress é a seguinte:
