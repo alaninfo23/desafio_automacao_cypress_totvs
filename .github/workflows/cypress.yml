@@ -17,10 +17,16 @@ jobs:
       - name: 🟢 Instalar Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: 📦 Instalar dependências
         run: npm ci
+
+      - name: 🚀 Iniciar servidor estático
+        run: npx http-server ./ -p 5500 &
+
+      - name: ⏱️ Esperar servidor subir
+        run: npx wait-on http://127.0.0.1:5500
 
       - name: 🧪 Rodar testes Cypress com Mochawesome
         run: npx cypress run
