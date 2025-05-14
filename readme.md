@@ -64,6 +64,10 @@ Os seguintes cenários de teste foram automatizados:
 * **Seleção de múltiplos meios de contato:** Assegura que o usuário pode selecionar mais de uma opção de contato (por exemplo, e-mail e telefone).
 * **Abertura e validação do conteúdo da Política de Privacidade em nova aba:** Verifica se o link da Política de Privacidade abre em uma nova aba do navegador e se o conteúdo carregado corresponde ao esperado.
 
+## 🧪 Execução dos testes automatizados:
+
+![image](https://github.com/user-attachments/assets/6b165874-87fe-4a03-a8ab-49179d50c777)
+
 ## 🗂️ Estrutura do Projeto
 
 A estrutura de arquivos e diretórios para este projeto de testes Cypress é a seguinte:
