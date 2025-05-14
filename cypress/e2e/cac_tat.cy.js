@@ -2,7 +2,7 @@ import formData from "../fixtures/formData.json";
 
 describe("Desafio TOTVS - Central de Atendimento ao Cliente TAT", () => {
   beforeEach(() => {
-    cy.visit("/index.html");
+    cy.visit("html/index.html");
   });
 
   it("Preenche e envia o formulário com os campos obrigatórios", () => {
